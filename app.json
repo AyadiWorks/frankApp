@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "Frank Cares",
+    "slug": "frank-cares",
+    "version": "1.6",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-ted.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "hooks": {
+        "postPublish": [
+          {
+            "file": "sentry-expo/upload-sourcemaps",
+            "config": {
+              "organization": "omnimenu",
+              "project": "react-native",
+              "authToken": "a18c8d8afbca4b4fa778935bd97f5632ca6beaa76dbd435db976241bf914ba11"
+            }
+          }
+        ]
+      },
+      "plugins": [
+        "sentry-expo"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.realfrank"
+    },
+    "android": {
+      "package": "com.realfrank"
+    }
+  },
+  "updates": {
+    "fallbackToCacheTimeout": 0
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.realfrank",
+    "infoPlist": {
+      "NSLocationWhenInUseUsageDescription": "This app uses the current location information to get delivery address.",
+      "NSCameraUsageDescription": "This app uses Camera to scan a QR code to detect the Table number of the client"
+    },
+    "buildNumber": "1.36"
+  },
+  "android": {
+    "versionCode": 2,
+    "useNextNotificationsApi": true,
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/images/adaptive-icon.png",
+      "backgroundColor": "#ffffff"
+    },
+    "permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "CAMERA"
+    ],
+    "package": "com.realfrank",
+    "googleServicesFile": "./google-services.json"
+  },
+  "web": {
+    "favicon": "./assets/images/favicon.png"
+  },
+  "packagerOpts": {
+    "config": "metro.config.js",
+    "assetExts": [
+      "*"
+    ],
+    "sourceExts": [
+      "expo.ts",
+      "expo.tsx",
+      "expo.js",
+      "expo.jsx",
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "wasm",
+      "svg"
+    ]
+  },
+  "plugins": [
+    "sentry-expo"
+  ]
+}

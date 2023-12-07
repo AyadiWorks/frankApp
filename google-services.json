@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "289747699831",
+    "project_id": "real-frank",
+    "storage_bucket": "real-frank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289747699831:android:9ff4971ae73ea54842de72",
+        "android_client_info": {
+          "package_name": "com.realfrank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289747699831-6aor5dpo05063ih14iqotdoadug9k6gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhbAYlHgOEESBXmCzOUBTzGl5tR9hDJOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289747699831-6aor5dpo05063ih14iqotdoadug9k6gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
