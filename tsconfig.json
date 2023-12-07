@@ -3,4 +3,5 @@
   "compilerOptions": {
     "strict": true,
   },
+  "include": ["node_modules/react-native-redash/lib/typescript/v1/index.d.ts"],
 }

@@ -14,7 +14,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {
   DarkTheme,
   DefaultTheme,
-  NavigationContainer
 } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {
@@ -70,12 +69,9 @@ const primaryColor = STYLE_COLOR_PRIMARY;
 export default function Navigation({ colorScheme } : { colorScheme: ColorSchemeName; }) {
 
   return (
-    <NavigationContainer
-      linking={LinkingConfiguration}
-      theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
-    >
+
       <RootNavigator />
-    </NavigationContainer>
+
   );
 }
 
@@ -364,12 +360,8 @@ function BottomTabNavigator() {
           headerShown: false,
           title: "Loyalty",
           tabBarIcon: ({ color }) => (
-            // <AntDesign name="staro" size={24} color={color} />
-            // <MaterialCommunityIcons name="bitcoin" size={30} color={color} />
-            // <FontAwesome name="shopping-basket" size={24} color="#FFF" />
-            // <FontAwesome5 name="coins" size={24} color="black" />
             <MaterialCommunityIcons
-              name="cash-usd-outline"
+              name="cash-100"
               size={26}
               color={color}
             />

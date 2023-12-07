@@ -1,4 +1,5 @@
 "use strict";
+import * as Redash from 'react-native-redash';
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -34,7 +35,6 @@ const React = __importStar(require("react"));
 const react_native_1 = require("react-native");
 const expo_linear_gradient_1 = require("expo-linear-gradient");
 const react_native_reanimated_1 = __importStar(require("react-native-reanimated"));
-import * as Redash from 'react-native-redash';
 const Constants_1 = require("./Constants");
 const { useCode, set, cond, eq } = react_native_reanimated_1.default;
 const { useState, useCallback } = React;

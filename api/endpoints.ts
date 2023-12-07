@@ -105,6 +105,8 @@ const authOtpVerification = (body: any, code: any) =>
     {
       phoneNumber: body.phoneNumber,
       countryCode: body.countryCode,
+      clientId: body.clientId,
+      Channel: "sms",
     }
   );
 
